@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor:#ffffff;
+    --secondaryColor: #dff6ff;
+    --text-color: rgb(11, 33, 47 , 1);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--primaryColor);
+}
+.nav--open{
+    transform: translateX(0) !important ;
+}
+.header{
+    background-color: var(--secondaryColor);
+    position: fixed;
+    width: 100%;
+    
+    
+}
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80px;
+    padding: 0 30px;
+}
+.logo{
+    
+}
+.nav{
+    transition: all 0.3s ease-in-out ;
+}
+.nav_list{
+    display: flex;
+    column-gap: 60px;
+    
+}
+.nav_item a{
+    font-size: 1.3rem;
+}
+.nav_link{
+    color:rgb(11, 33, 47 , 0.7);
+    font-size: 16px;
+    transition: all 0.7s;
+}
+.nav_link:hover, .nav_link:focus{
+    color: #8d778a;
+}
+.harmburger{
+    display: none;
+    cursor: pointer;
+    
+}
+.bar{
+    height: 2px;
+    width: 27px;
+    background-color:var(--text-color);
+    margin: 5px 0;
+    opacity: 0.8;
+
+}
+
+
+.home{
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.home_content{
+    display: block;
+    padding-top: 40vh;
+    margin-left: 5rem;
+    color: rgb(11, 33, 47 , 1);
+    font-size: 2.5rem;
+}
+span{
+   color:#8d778a;
+ 
+}
+.home_content button{
+    background: rgba(223, 246, 255, 1);
+    color: var(--text-color);
+    min-width: 9rem;
+    min-height: 2.5rem;
+    font-size: 1.2rem;
+}
+.home_content button:hover{
+    cursor: pointer;
+    background:transparent;
+    transform: scale(1.05);
+    
+}
+
+
+
+@media(max-width:650px)
+{
+    .nav{
+        position: fixed;
+        width: 100%;
+        left:0;
+        top:60px;
+        background-color: transparent;
+        padding: 5px 0 10px;
+        transform: translateX(100%);
+        border: 5px  double #dff6ff;
+
+    }
+    .home{
+    background-size: cover;
+    
+    }
+    .header{
+        background-color: #dff6ff;
+    }
+    .nav_list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .harmburger{
+        display: block;
+    }
+}
