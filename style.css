@@ -248,6 +248,54 @@ button:hover{
     color:#cc9793;
 }
 
+.testimonials {
+  padding: 100px 0;
+  color: var(--text-color);
+  background-color: var(--secondaryColor);
+}
+.testimonials h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.testimonials .card {
+  transition: 0.5s;
+  margin-top: 60px;
+  width: 30%;
+  min-height: 40%;
+  color:var(--text-color);
+  box-shadow:1px 1px 1px #90a6b8;
+}
+.testimonials .card i {
+  font-size: 20px;  
+  padding-bottom: 20px;
+  color:#3B5998;
+}
+
+.blog{
+    background: var(--primaryColor);
+    height: 80vh;
+    color: var(--text-color);
+    font-size: large;
+}
+
+.blog .coming_soon_content{
+    text-align: center;
+    padding-top: 100px;
+}
+.blog .coming_soon_content h2 ,p{
+    padding-bottom: 10px;
+}
+
+#mc_embed_signup{
+    background:#fff; 
+    font:14px Helvetica,Arial,sans-serif; 
+    width: 20%;
+    justify-content: center;
+    margin-left: 40%;
+ }
+ .clear .foot .button{
+    color: var(--secondaryColor);
+ }
 @media(max-width:650px)
 {
     .nav{
